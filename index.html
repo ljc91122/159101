@@ -70,7 +70,7 @@ body { background:#F1C40F url(img/bg-noise-orange.png); }
 //var json = require('courseid_70941_participants.json');
 
 var json;
-fetch("courseid_72451_participants.json")
+fetch("filtered.json")
 .then(res => res.json())
 .then(data => {
 json = data[0];
@@ -170,7 +170,7 @@ function reset(){
   var namesbreak = "";
 
 
-    fetch("courseid_72451_participants.json")
+    fetch("filtered.json")
       .then(res => res.json())
       .then(data => {
       json = data[0];
